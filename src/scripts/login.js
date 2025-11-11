@@ -30,4 +30,17 @@ button.addEventListener('click', (event) => {
 
     window.location.href = './home.html'
 
+});
+
+checkbox.addEventListener('change', () => {
+
+    const type = password.getAttribute('type');
+
+    if (type !== 'password') {
+        password.setAttribute('type', 'password');
+        return;
+    }
+
+    password.setAttribute('type', 'text');
+
 })
